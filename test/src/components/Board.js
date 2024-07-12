@@ -17,7 +17,7 @@ export default class Board extends Component {
 }
 
   renderSquare(i){
-    return <Square value={this.state.squares[i]}/>;
+    return <Square value={this.state.squares[i]} onCilck={() => this.handleClick(i)}/>;
 }
   render() {
     const status = 'Next';
